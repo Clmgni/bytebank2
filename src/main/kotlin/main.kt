@@ -1,6 +1,3 @@
 fun main() {
     testaAutenticacao()
-    
-    testaFuncionarios()
-
 }
