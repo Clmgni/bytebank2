@@ -1,4 +1,4 @@
 fun main() {
-    println("Iniciando com o GitHub")
+    println("Bem vindo ao ByteBank2!")
     testaAutenticacao()
 }
