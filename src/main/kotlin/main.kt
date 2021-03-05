@@ -1,0 +1,6 @@
+fun main() {
+    testaAutenticacao()
+    
+    testaFuncionarios()
+
+}
