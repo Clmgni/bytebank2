@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.Funcionario
+package br.com.clmgni.bytebank2.modelo
 
 class CalculadoraBonificacao {
 

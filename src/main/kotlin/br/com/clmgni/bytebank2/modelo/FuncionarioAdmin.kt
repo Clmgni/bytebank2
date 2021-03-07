@@ -1,7 +1,4 @@
-package modelo
-
-import modelo.Autenticavel
-import modelo.Funcionario
+package br.com.clmgni.bytebank2.modelo
 
 abstract class FuncionarioAdmin(
     nome: String,

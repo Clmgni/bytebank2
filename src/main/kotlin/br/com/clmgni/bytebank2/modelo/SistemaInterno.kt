@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.Autenticavel
+package br.com.clmgni.bytebank2.modelo
 
 class SistemaInterno {
 
