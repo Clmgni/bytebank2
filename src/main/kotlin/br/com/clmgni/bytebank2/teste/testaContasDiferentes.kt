@@ -1,13 +1,31 @@
-import modelo.ContaCorrente
-import modelo.ContaPoupanca
+import br.com.clmgni.bytebank2.modelo.Cliente
+import br.com.clmgni.bytebank2.modelo.ContaCorrente
+import br.com.clmgni.bytebank2.modelo.ContaPoupanca
+import br.com.clmgni.bytebank2.modelo.Endereco
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(
-        titular = "Alex",
+        titular = Cliente(
+            nome = "Alex",
+            cpf = "111.111.111-11",
+            senha = 1,
+            endereco = Endereco(
+                logradouro = "Rua Vergueiro"
+            )
+        ),
         numero = 1000
     )
+    println("titular ${contaCorrente.titular}")
+    println("nome do titular ${contaCorrente.titular.nome}")
+    println("cpf do titular ${contaCorrente.titular.cpf}")
+    println("endereco titular ${contaCorrente.titular.endereco}")
+
     val contaPoupanca = ContaPoupanca(
-        titular = "Fran",
+        titular = Cliente(
+            nome = "Fran",
+            cpf = "",
+            senha = 2
+        ),
         numero = 1001
     )
 

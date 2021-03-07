@@ -1,6 +1,4 @@
-package modelo
-
-import modelo.FuncionarioAdmin
+package br.com.clmgni.bytebank2.modelo
 
 class Gerente(
     nome: String,
