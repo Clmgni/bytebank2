@@ -1,6 +1,6 @@
-import br.com.clmgni.bytebank2.modelo.Cliente
-import br.com.clmgni.bytebank2.modelo.ContaCorrente
-import br.com.clmgni.bytebank2.modelo.ContaPoupanca
+package br.com.clmgni.bytebank2.teste
+
+import br.com.clmgni.bytebank2.modelo.*
 
 fun testaCopiasEReferencias() {
     val numeroX = 10
@@ -14,8 +14,7 @@ fun testaCopiasEReferencias() {
 
     val contaJoao = ContaCorrente(joao, 1002)
     contaJoao.titular.nome = "João"
-    var contaMaria = ContaPoupanca(
-        Cliente(
+    var contaMaria = ContaPoupanca(Cliente(
         nome = "Maria",
         cpf = "",
         senha = 2

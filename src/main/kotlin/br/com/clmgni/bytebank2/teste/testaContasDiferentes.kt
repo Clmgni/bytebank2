@@ -1,7 +1,6 @@
-import br.com.clmgni.bytebank2.modelo.Cliente
-import br.com.clmgni.bytebank2.modelo.ContaCorrente
-import br.com.clmgni.bytebank2.modelo.ContaPoupanca
-import br.com.clmgni.bytebank2.modelo.Endereco
+package br.com.clmgni.bytebank2.teste
+
+import br.com.clmgni.bytebank2.modelo.*
 
 fun testaContasDiferentes() {
     val contaCorrente = ContaCorrente(

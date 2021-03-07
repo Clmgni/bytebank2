@@ -1,3 +1,5 @@
+package br.com.clmgni.bytebank2.teste
+
 import br.com.clmgni.bytebank2.modelo.Cliente
 import br.com.clmgni.bytebank2.modelo.Diretor
 import br.com.clmgni.bytebank2.modelo.Gerente
