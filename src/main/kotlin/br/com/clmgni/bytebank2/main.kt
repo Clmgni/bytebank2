@@ -1,5 +1,4 @@
 import br.com.clmgni.bytebank2.modelo.Endereco
-import br.com.clmgni.bytebank2.modelo.logo
 
 fun main() {
     println("Iniciando o Principal!")
