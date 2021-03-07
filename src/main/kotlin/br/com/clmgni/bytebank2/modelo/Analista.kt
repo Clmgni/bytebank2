@@ -1,5 +1,7 @@
 package br.com.clmgni.bytebank2.modelo
 
+import br.com.clmgni.bytebank2.modelo.Funcionario
+
 class Analista(
     nome: String,
     cpf: String,
