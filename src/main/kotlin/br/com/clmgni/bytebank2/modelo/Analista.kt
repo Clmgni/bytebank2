@@ -1,4 +1,4 @@
-package modelo
+package br.com.clmgni.bytebank2.modelo
 
 class Analista(
     nome: String,
