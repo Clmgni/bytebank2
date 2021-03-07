@@ -2,7 +2,7 @@ import br.com.clmgni.bytebank2.modelo.Endereco
 import br.com.clmgni.bytebank2.modelo.logo
 
 fun main() {
-    println("Iniciando o Main!")
+    println("Iniciando o Principal!")
 
     val endereco = Endereco(
         logradouro = "Rua vergueiro",
