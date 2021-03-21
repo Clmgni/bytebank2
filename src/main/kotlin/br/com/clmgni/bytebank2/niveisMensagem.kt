@@ -1,7 +1,8 @@
 package br.com.clmgni.bytebank2
 
-enum class niveisMensagem(s: String) {
+enum class niveisMensagem(String: String) {
     INFO("INFO"),
-    ERROR("ERROR"),
+    WARNING("WARNING"),
+    ERROR("SEVERE"),
     SEVERE("SEVERE")
 }
