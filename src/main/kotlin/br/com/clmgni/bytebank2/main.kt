@@ -1,28 +1,39 @@
 
 import br.com.clmgni.bytebank2.Logando
+import br.com.clmgni.bytebank2.NiveisMensagem
+import br.com.clmgni.bytebank2.NiveisMensagem.INFO
 import br.com.clmgni.bytebank2.Pessoa
-import br.com.clmgni.bytebank2.niveisMensagem
-import br.com.clmgni.bytebank2.niveisMensagem.INFO
-import br.com.clmgni.bytebank2.util
+import br.com.clmgni.bytebank2.Util
 
 fun main() {
 
-    util.iLog("SystemOut")
-    util.gLog(Logando(INFO,"Iniciando"))
-    util.gLog(Logando(niveisMensagem.WARNING,"Executando"))
+    try {
+        Util.iLog("SystemOut")
+        Util.gLog(Logando(INFO, "Iniciando"))
+        Util.gLog(Logando(NiveisMensagem.WARNING, "Executando"))
 
-    var Pessoa1 = Pessoa("João da Silva",100.0)
+        var Pessoa1: Pessoa = Pessoa(Util.limpaNome("Jose Porco"), 100.0)
+        Pessoa1.nome = "Joaquim Jose da Silva Pinto"
 
-    var texto = util.limpaNome(Pessoa1.nome)
-
-    when {
-        util.validaNome(texto) -> {
-            Pessoa1.nome == texto
-            util.gLog(Logando(INFO,"Nome válido: ${Pessoa1.nome}"))
+        when {
+            Util.validaNome(Pessoa1.nome) -> {
+                Util.gLog(Logando(INFO, "Nome válido: ${Pessoa1.nome}"))
+            }
+            else -> {
+                Util.gLog(Logando(NiveisMensagem.SEVERE, "Nome inválido: ${Pessoa1.nome}"))
+                throw  IllegalArgumentException ("Usuário com nome inválido: ${Pessoa1.nome}")
+            }
         }
-        else -> {
-            util.gLog(Logando(INFO,"Nome inválido: $texto"))
-        }
+
+        println("--------------------------------------")
+        println("Nome: ${Pessoa1.nome}")
+        println("Nome: ${Pessoa1.saldo}")
+        println("--------------------------------------")
+
+    } catch (e: Exception) {
+        println(e)
+    } finally {
+        Util.gLog(Logando(INFO, "Finalizado"))
     }
-    util.gLog(Logando(INFO,"Finalizando"))
+
 }
