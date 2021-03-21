@@ -1,26 +1,25 @@
+
+import br.com.clmgni.bytebank2.Logando
+import br.com.clmgni.bytebank2.niveisMensagem.INFO
 import br.com.clmgni.bytebank2.util
 
 fun main() {
 
     util.iLog()
+    util.gLog(Logando(INFO,"Iniciando"))
 
-    println(System.getProperty("user.language"))
+    var nome = "João da Silva ####"
+    var texto = util.limpaNome(nome)
 
-    util.gLog("Iniciando!", "INFO")
-
-    println(util.Companion.testeVar)
-
-    var nome = "João da silva ####"
-    var texto = util.validaNome(nome)
-    var regexC = "[A-Z][a-z].* [A-Z][a-z].*".toRegex()
-
-    if (texto.matches(regexC)) {
-        println("Nome válido: $texto")
-        util.gLog("Nome OK", "INFO")
-    } else {
-        println("Nome inválido: $texto")
-        util.gLog("Nome não OK", "ERROR")
-
+    when {
+        util.validaNome(texto) -> {
+            println("Nome válido: $texto")
+            util.gLog(Logando(INFO,"Nome OK"))
+        }
+        else -> {
+            println("Nome inválido: $texto")
+            util.gLog(Logando(INFO,"Nome não OK"))
+        }
     }
-
+    util.gLog(Logando(INFO,"Finalizando"))
 }
