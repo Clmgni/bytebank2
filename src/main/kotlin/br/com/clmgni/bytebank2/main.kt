@@ -4,6 +4,7 @@ import br.com.clmgni.bytebank2.NiveisMensagem
 import br.com.clmgni.bytebank2.NiveisMensagem.INFO
 import br.com.clmgni.bytebank2.Pessoa
 import br.com.clmgni.bytebank2.Util
+import java.text.NumberFormat
 
 fun main() {
 
@@ -26,9 +27,11 @@ fun main() {
         }
 
         println("--------------------------------------")
-        println("Nome: ${Pessoa1.nome}")
-        println("Nome: ${Pessoa1.saldo}")
+        println(Pessoa1.getDados())
         println("--------------------------------------")
+
+        println(java.util.TimeZone.getDefault().displayName)
+        println(NumberFormat.getInstance().currency)
 
     } catch (e: Exception) {
         println(e)

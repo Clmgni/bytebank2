@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-03-21T21:30:03.615448300Z</date>
+  <millis>1616362203615</millis>
+  <nanos>448300</nanos>
+  <sequence>0</sequence>
+  <logger>LoginngApp</logger>
+  <level>INFO</level>
+  <class>br.com.clmgni.bytebank2.Util$Companion</class>
+  <method>gLog</method>
+  <thread>1</thread>
+  <message>Iniciando</message>
+</record>
+<record>
+  <date>2021-03-21T21:30:04.031558900Z</date>
+  <millis>1616362204031</millis>
+  <nanos>558900</nanos>
+  <sequence>1</sequence>
+  <logger>LoginngApp</logger>
+  <level>WARNING</level>
+  <class>br.com.clmgni.bytebank2.Util$Companion</class>
+  <method>gLog</method>
+  <thread>1</thread>
+  <message>Executando</message>
+</record>
+<record>
+  <date>2021-03-21T21:30:04.065563300Z</date>
+  <millis>1616362204065</millis>
+  <nanos>563300</nanos>
+  <sequence>2</sequence>
+  <logger>LoginngApp</logger>
+  <level>INFO</level>
+  <class>br.com.clmgni.bytebank2.Util$Companion</class>
+  <method>gLog</method>
+  <thread>1</thread>
+  <message>Nome válido: Joaquim Jose da Silva Pinto</message>
+</record>
+<record>
+  <date>2021-03-21T21:30:04.497089800Z</date>
+  <millis>1616362204497</millis>
+  <nanos>89800</nanos>
+  <sequence>3</sequence>
+  <logger>LoginngApp</logger>
+  <level>INFO</level>
+  <class>br.com.clmgni.bytebank2.Util$Companion</class>
+  <method>gLog</method>
+  <thread>1</thread>
+  <message>Finalizado</message>
+</record>
+</log>
